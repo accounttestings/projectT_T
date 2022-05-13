@@ -1,0 +1,138 @@
+h1 {
+    text-align: center;
+    color: darksalmon;
+}
+
+p {
+    color: rgb(122, 115, 114);
+
+}
+
+html {
+    background-color:rgb(245, 198, 198)
+}
+
+/* navigation */
+
+.site-nav li {
+    list-style: none;
+    float: down;
+   margin-right: 10px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+   margin-top: 20px;
+}
+
+.site-nav a {
+   color:black;
+   text-decoration: none;
+   padding: 10px 20px;
+   border: 2px solid rgb(100, 116, 100);
+   display: block;
+   margin-bottom: 10px;
+}
+
+.site-nav a:hover {
+    background-color: rgb(216, 167, 150);
+}
+
+/* end navigation */
+
+h2 {
+    color: darksalmon;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: moccasin;
+    padding: 40px 40px 40px 40px;
+    background: url(../picturefolder/graystrip.jpg) left bottom repeat, #fff  url(../picturefolder/graystrip.jpg) left top repeat;
+    background-repeat: repeat-x;
+    background-size: 40px 20px;
+}
+
+.support a{
+    text-decoration: none;
+    color: rgb(212, 172, 159);
+}
+
+.support a:hover {
+    color:rgb(129, 88, 74)
+}
+
+/* media query */
+@media screen and (max-width: 700px) {
+    .main-area,
+    .support {
+        width: auto;
+        float: none;
+    }
+
+    .main-area {
+        padding-right: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+        .site-nav li {
+            width: 50%;
+            margin-right: 0;
+        }
+    
+        .site-nav a {
+            padding: 20px 0;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            text-align: center;
+            border: 3px solid #e5e9dc;
+        }
+    }    
+
+@media screen and (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-area {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hide-small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-nav li {
+        width: 70%;
+        margin-right: 0;
+    }
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid #e5e9dc;
+    }
+}
+}
+/* end media query */
+
